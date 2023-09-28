@@ -34,7 +34,7 @@ class EventDetailView extends StatelessWidget {
                       color: Colors.white.withOpacity(0.2),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.bookmark),
+                      icon: const Icon(Icons.bookmark),
                       onPressed: () {},
                     ),
                   ),
@@ -73,14 +73,14 @@ class EventDetailView extends StatelessWidget {
                           const SizedBox(
                             height: 16,
                           ),
-                          OrganiserInfoWidget(
+                          organiserInfoWidget(
                               Image.network(state.event.organiser_icon),
                               state.event.organiser_name,
                               "Organiser"),
                           const SizedBox(
                             height: 19,
                           ),
-                          DetailWidget(
+                          detailWidget(
                             SvgPicture.asset('assets/calender.svg'),
                             DateFormat('d MMMM, yyyy')
                                 .format(state.event.date_time),
@@ -90,7 +90,7 @@ class EventDetailView extends StatelessWidget {
                           const SizedBox(
                             height: 19,
                           ),
-                          DetailWidget(
+                          detailWidget(
                             SvgPicture.asset('assets/location_pin2.svg'),
                             state.event.venue_name,
                             "${state.event.venue_city}, ${state.event.venue_country}",
@@ -144,7 +144,7 @@ class EventDetailView extends StatelessWidget {
   }
 }
 
-Widget OrganiserInfoWidget(Widget imageLink, String text1, String text2) {
+Widget organiserInfoWidget(Widget imageLink, String text1, String text2) {
   return Row(
     children: [
       SizedBox(
@@ -176,7 +176,7 @@ Widget OrganiserInfoWidget(Widget imageLink, String text1, String text2) {
   );
 }
 
-Widget DetailWidget(Widget icon, text1, String text2) {
+Widget detailWidget(Widget icon, text1, String text2) {
   return Row(
     children: [
       Container(

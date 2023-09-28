@@ -75,7 +75,7 @@ class EventListWidget extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               SvgPicture.asset('assets/location_pin.svg'),
-                              SizedBox(
+                              const SizedBox(
                                 width: 6,
                               ),
                               Flexible(

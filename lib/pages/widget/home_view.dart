@@ -29,7 +29,7 @@ class HomeView extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => SearchPage()));
+                                    builder: (context) => const SearchPage()));
                           },
                           icon: SvgPicture.asset('assets/search.svg')),
                       IconButton(

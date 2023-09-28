@@ -1,4 +1,3 @@
-import 'package:country_codes/country_codes.dart';
 import 'package:events/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -22,10 +21,10 @@ class MyApp extends StatelessWidget {
             onPrimary: Colors.black,
             secondary: HexColor('#5669ff')),
         useMaterial3: false,
-        appBarTheme: AppBarTheme(elevation: 0),
+        appBarTheme: const AppBarTheme(elevation: 0),
         fontFamily: GoogleFonts.inter().fontFamily,
       ),
-      home: HomeWidget(),
+      home: const HomeWidget(),
     );
   }
 }
