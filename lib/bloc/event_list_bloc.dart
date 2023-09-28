@@ -11,7 +11,6 @@ class EventListBloc extends Cubit<EventListState> {
       var events = await eventRepository.getAllEvents();
       emit(state.copyWith(events: events, isLoading: false));
     } catch (e) {
-      print(e);
       emit(state.copyWith(isLoading: false, hasError: true));
     }
   }
@@ -22,7 +21,6 @@ class EventListBloc extends Cubit<EventListState> {
       var events = await eventRepository.getEventBySearch(search);
       emit(state.copyWith(events: events, isLoading: false));
     } catch (e) {
-      print(e);
       emit(state.copyWith(isLoading: false, hasError: true));
     }
   }
