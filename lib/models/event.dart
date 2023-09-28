@@ -9,13 +9,13 @@ class Event with _$Event {
     required int id,
     required String title,
     required String description,
-    required String bannerImage,
-    required DateTime dateTime,
-    required String organiserName,
-    required String organiserIcon,
-    required String venueName,
-    required String venueCity,
-    required String venueCountry,
+    required String banner_image,
+    required DateTime date_time,
+    required String organiser_name,
+    required String organiser_icon,
+    required String venue_name,
+    required String venue_city,
+    required String venue_country,
   }) = _Event;
 
   factory Event.fromJson(Map<String, dynamic> json) => _$EventFromJson(json);

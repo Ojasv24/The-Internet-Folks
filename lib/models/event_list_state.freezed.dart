@@ -14,17 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-EventListState _$EventListStateFromJson(Map<String, dynamic> json) {
-  return _EventListState.fromJson(json);
-}
-
 /// @nodoc
 mixin _$EventListState {
   List<Event> get events => throw _privateConstructorUsedError;
   bool get isLoading => throw _privateConstructorUsedError;
   bool get hasError => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $EventListStateCopyWith<EventListState> get copyWith =>
       throw _privateConstructorUsedError;
@@ -117,16 +112,13 @@ class __$$_EventListStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-@JsonSerializable()
+
 class _$_EventListState implements _EventListState {
   const _$_EventListState(
       {final List<Event> events = const [],
       this.isLoading = false,
       this.hasError = false})
       : _events = events;
-
-  factory _$_EventListState.fromJson(Map<String, dynamic> json) =>
-      _$$_EventListStateFromJson(json);
 
   final List<Event> _events;
   @override
@@ -161,7 +153,6 @@ class _$_EventListState implements _EventListState {
                 other.hasError == hasError));
   }
 
-  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType,
       const DeepCollectionEquality().hash(_events), isLoading, hasError);
@@ -171,13 +162,6 @@ class _$_EventListState implements _EventListState {
   @pragma('vm:prefer-inline')
   _$$_EventListStateCopyWith<_$_EventListState> get copyWith =>
       __$$_EventListStateCopyWithImpl<_$_EventListState>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_EventListStateToJson(
-      this,
-    );
-  }
 }
 
 abstract class _EventListState implements EventListState {
@@ -185,9 +169,6 @@ abstract class _EventListState implements EventListState {
       {final List<Event> events,
       final bool isLoading,
       final bool hasError}) = _$_EventListState;
-
-  factory _EventListState.fromJson(Map<String, dynamic> json) =
-      _$_EventListState.fromJson;
 
   @override
   List<Event> get events;

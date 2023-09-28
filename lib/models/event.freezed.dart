@@ -23,13 +23,13 @@ mixin _$Event {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
-  String get bannerImage => throw _privateConstructorUsedError;
-  DateTime get dateTime => throw _privateConstructorUsedError;
-  String get organiserName => throw _privateConstructorUsedError;
-  String get organiserIcon => throw _privateConstructorUsedError;
-  String get venueName => throw _privateConstructorUsedError;
-  String get venueCity => throw _privateConstructorUsedError;
-  String get venueCountry => throw _privateConstructorUsedError;
+  String get banner_image => throw _privateConstructorUsedError;
+  DateTime get date_time => throw _privateConstructorUsedError;
+  String get organiser_name => throw _privateConstructorUsedError;
+  String get organiser_icon => throw _privateConstructorUsedError;
+  String get venue_name => throw _privateConstructorUsedError;
+  String get venue_city => throw _privateConstructorUsedError;
+  String get venue_country => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -45,13 +45,13 @@ abstract class $EventCopyWith<$Res> {
       {int id,
       String title,
       String description,
-      String bannerImage,
-      DateTime dateTime,
-      String organiserName,
-      String organiserIcon,
-      String venueName,
-      String venueCity,
-      String venueCountry});
+      String banner_image,
+      DateTime date_time,
+      String organiser_name,
+      String organiser_icon,
+      String venue_name,
+      String venue_city,
+      String venue_country});
 }
 
 /// @nodoc
@@ -70,13 +70,13 @@ class _$EventCopyWithImpl<$Res, $Val extends Event>
     Object? id = null,
     Object? title = null,
     Object? description = null,
-    Object? bannerImage = null,
-    Object? dateTime = null,
-    Object? organiserName = null,
-    Object? organiserIcon = null,
-    Object? venueName = null,
-    Object? venueCity = null,
-    Object? venueCountry = null,
+    Object? banner_image = null,
+    Object? date_time = null,
+    Object? organiser_name = null,
+    Object? organiser_icon = null,
+    Object? venue_name = null,
+    Object? venue_city = null,
+    Object? venue_country = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -91,33 +91,33 @@ class _$EventCopyWithImpl<$Res, $Val extends Event>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      bannerImage: null == bannerImage
-          ? _value.bannerImage
-          : bannerImage // ignore: cast_nullable_to_non_nullable
+      banner_image: null == banner_image
+          ? _value.banner_image
+          : banner_image // ignore: cast_nullable_to_non_nullable
               as String,
-      dateTime: null == dateTime
-          ? _value.dateTime
-          : dateTime // ignore: cast_nullable_to_non_nullable
+      date_time: null == date_time
+          ? _value.date_time
+          : date_time // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      organiserName: null == organiserName
-          ? _value.organiserName
-          : organiserName // ignore: cast_nullable_to_non_nullable
+      organiser_name: null == organiser_name
+          ? _value.organiser_name
+          : organiser_name // ignore: cast_nullable_to_non_nullable
               as String,
-      organiserIcon: null == organiserIcon
-          ? _value.organiserIcon
-          : organiserIcon // ignore: cast_nullable_to_non_nullable
+      organiser_icon: null == organiser_icon
+          ? _value.organiser_icon
+          : organiser_icon // ignore: cast_nullable_to_non_nullable
               as String,
-      venueName: null == venueName
-          ? _value.venueName
-          : venueName // ignore: cast_nullable_to_non_nullable
+      venue_name: null == venue_name
+          ? _value.venue_name
+          : venue_name // ignore: cast_nullable_to_non_nullable
               as String,
-      venueCity: null == venueCity
-          ? _value.venueCity
-          : venueCity // ignore: cast_nullable_to_non_nullable
+      venue_city: null == venue_city
+          ? _value.venue_city
+          : venue_city // ignore: cast_nullable_to_non_nullable
               as String,
-      venueCountry: null == venueCountry
-          ? _value.venueCountry
-          : venueCountry // ignore: cast_nullable_to_non_nullable
+      venue_country: null == venue_country
+          ? _value.venue_country
+          : venue_country // ignore: cast_nullable_to_non_nullable
               as String,
     ) as $Val);
   }
@@ -133,13 +133,13 @@ abstract class _$$_EventCopyWith<$Res> implements $EventCopyWith<$Res> {
       {int id,
       String title,
       String description,
-      String bannerImage,
-      DateTime dateTime,
-      String organiserName,
-      String organiserIcon,
-      String venueName,
-      String venueCity,
-      String venueCountry});
+      String banner_image,
+      DateTime date_time,
+      String organiser_name,
+      String organiser_icon,
+      String venue_name,
+      String venue_city,
+      String venue_country});
 }
 
 /// @nodoc
@@ -154,13 +154,13 @@ class __$$_EventCopyWithImpl<$Res> extends _$EventCopyWithImpl<$Res, _$_Event>
     Object? id = null,
     Object? title = null,
     Object? description = null,
-    Object? bannerImage = null,
-    Object? dateTime = null,
-    Object? organiserName = null,
-    Object? organiserIcon = null,
-    Object? venueName = null,
-    Object? venueCity = null,
-    Object? venueCountry = null,
+    Object? banner_image = null,
+    Object? date_time = null,
+    Object? organiser_name = null,
+    Object? organiser_icon = null,
+    Object? venue_name = null,
+    Object? venue_city = null,
+    Object? venue_country = null,
   }) {
     return _then(_$_Event(
       id: null == id
@@ -175,33 +175,33 @@ class __$$_EventCopyWithImpl<$Res> extends _$EventCopyWithImpl<$Res, _$_Event>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      bannerImage: null == bannerImage
-          ? _value.bannerImage
-          : bannerImage // ignore: cast_nullable_to_non_nullable
+      banner_image: null == banner_image
+          ? _value.banner_image
+          : banner_image // ignore: cast_nullable_to_non_nullable
               as String,
-      dateTime: null == dateTime
-          ? _value.dateTime
-          : dateTime // ignore: cast_nullable_to_non_nullable
+      date_time: null == date_time
+          ? _value.date_time
+          : date_time // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      organiserName: null == organiserName
-          ? _value.organiserName
-          : organiserName // ignore: cast_nullable_to_non_nullable
+      organiser_name: null == organiser_name
+          ? _value.organiser_name
+          : organiser_name // ignore: cast_nullable_to_non_nullable
               as String,
-      organiserIcon: null == organiserIcon
-          ? _value.organiserIcon
-          : organiserIcon // ignore: cast_nullable_to_non_nullable
+      organiser_icon: null == organiser_icon
+          ? _value.organiser_icon
+          : organiser_icon // ignore: cast_nullable_to_non_nullable
               as String,
-      venueName: null == venueName
-          ? _value.venueName
-          : venueName // ignore: cast_nullable_to_non_nullable
+      venue_name: null == venue_name
+          ? _value.venue_name
+          : venue_name // ignore: cast_nullable_to_non_nullable
               as String,
-      venueCity: null == venueCity
-          ? _value.venueCity
-          : venueCity // ignore: cast_nullable_to_non_nullable
+      venue_city: null == venue_city
+          ? _value.venue_city
+          : venue_city // ignore: cast_nullable_to_non_nullable
               as String,
-      venueCountry: null == venueCountry
-          ? _value.venueCountry
-          : venueCountry // ignore: cast_nullable_to_non_nullable
+      venue_country: null == venue_country
+          ? _value.venue_country
+          : venue_country // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -214,13 +214,13 @@ class _$_Event implements _Event {
       {required this.id,
       required this.title,
       required this.description,
-      required this.bannerImage,
-      required this.dateTime,
-      required this.organiserName,
-      required this.organiserIcon,
-      required this.venueName,
-      required this.venueCity,
-      required this.venueCountry});
+      required this.banner_image,
+      required this.date_time,
+      required this.organiser_name,
+      required this.organiser_icon,
+      required this.venue_name,
+      required this.venue_city,
+      required this.venue_country});
 
   factory _$_Event.fromJson(Map<String, dynamic> json) =>
       _$$_EventFromJson(json);
@@ -232,23 +232,23 @@ class _$_Event implements _Event {
   @override
   final String description;
   @override
-  final String bannerImage;
+  final String banner_image;
   @override
-  final DateTime dateTime;
+  final DateTime date_time;
   @override
-  final String organiserName;
+  final String organiser_name;
   @override
-  final String organiserIcon;
+  final String organiser_icon;
   @override
-  final String venueName;
+  final String venue_name;
   @override
-  final String venueCity;
+  final String venue_city;
   @override
-  final String venueCountry;
+  final String venue_country;
 
   @override
   String toString() {
-    return 'Event(id: $id, title: $title, description: $description, bannerImage: $bannerImage, dateTime: $dateTime, organiserName: $organiserName, organiserIcon: $organiserIcon, venueName: $venueName, venueCity: $venueCity, venueCountry: $venueCountry)';
+    return 'Event(id: $id, title: $title, description: $description, banner_image: $banner_image, date_time: $date_time, organiser_name: $organiser_name, organiser_icon: $organiser_icon, venue_name: $venue_name, venue_city: $venue_city, venue_country: $venue_country)';
   }
 
   @override
@@ -260,20 +260,20 @@ class _$_Event implements _Event {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
                 other.description == description) &&
-            (identical(other.bannerImage, bannerImage) ||
-                other.bannerImage == bannerImage) &&
-            (identical(other.dateTime, dateTime) ||
-                other.dateTime == dateTime) &&
-            (identical(other.organiserName, organiserName) ||
-                other.organiserName == organiserName) &&
-            (identical(other.organiserIcon, organiserIcon) ||
-                other.organiserIcon == organiserIcon) &&
-            (identical(other.venueName, venueName) ||
-                other.venueName == venueName) &&
-            (identical(other.venueCity, venueCity) ||
-                other.venueCity == venueCity) &&
-            (identical(other.venueCountry, venueCountry) ||
-                other.venueCountry == venueCountry));
+            (identical(other.banner_image, banner_image) ||
+                other.banner_image == banner_image) &&
+            (identical(other.date_time, date_time) ||
+                other.date_time == date_time) &&
+            (identical(other.organiser_name, organiser_name) ||
+                other.organiser_name == organiser_name) &&
+            (identical(other.organiser_icon, organiser_icon) ||
+                other.organiser_icon == organiser_icon) &&
+            (identical(other.venue_name, venue_name) ||
+                other.venue_name == venue_name) &&
+            (identical(other.venue_city, venue_city) ||
+                other.venue_city == venue_city) &&
+            (identical(other.venue_country, venue_country) ||
+                other.venue_country == venue_country));
   }
 
   @JsonKey(ignore: true)
@@ -283,13 +283,13 @@ class _$_Event implements _Event {
       id,
       title,
       description,
-      bannerImage,
-      dateTime,
-      organiserName,
-      organiserIcon,
-      venueName,
-      venueCity,
-      venueCountry);
+      banner_image,
+      date_time,
+      organiser_name,
+      organiser_icon,
+      venue_name,
+      venue_city,
+      venue_country);
 
   @JsonKey(ignore: true)
   @override
@@ -310,13 +310,13 @@ abstract class _Event implements Event {
       {required final int id,
       required final String title,
       required final String description,
-      required final String bannerImage,
-      required final DateTime dateTime,
-      required final String organiserName,
-      required final String organiserIcon,
-      required final String venueName,
-      required final String venueCity,
-      required final String venueCountry}) = _$_Event;
+      required final String banner_image,
+      required final DateTime date_time,
+      required final String organiser_name,
+      required final String organiser_icon,
+      required final String venue_name,
+      required final String venue_city,
+      required final String venue_country}) = _$_Event;
 
   factory _Event.fromJson(Map<String, dynamic> json) = _$_Event.fromJson;
 
@@ -327,19 +327,19 @@ abstract class _Event implements Event {
   @override
   String get description;
   @override
-  String get bannerImage;
+  String get banner_image;
   @override
-  DateTime get dateTime;
+  DateTime get date_time;
   @override
-  String get organiserName;
+  String get organiser_name;
   @override
-  String get organiserIcon;
+  String get organiser_icon;
   @override
-  String get venueName;
+  String get venue_name;
   @override
-  String get venueCity;
+  String get venue_city;
   @override
-  String get venueCountry;
+  String get venue_country;
   @override
   @JsonKey(ignore: true)
   _$$_EventCopyWith<_$_Event> get copyWith =>
